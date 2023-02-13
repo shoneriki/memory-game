@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/super-mario-256');
 
 * {
   box-sizing: border-box;
@@ -6,7 +7,12 @@
 
 body {
   height: 100vh;
-  font-family:'Lato', sans-serif;
+  font-family:'Super Mario Bros', sans-serif;
+}
+
+@font-face {
+  font-family: "Super Mario Bros";
+  src: url("./assets/Mario-Characters/SuperMario256.ttf") format("truetype");
 }
 
 :root {
@@ -26,7 +32,8 @@ body {
 }
 
 #appTitle {
-  font-size: 2.8rem;
+  font-size: 3rem;
+  font-family: 'Super Mario Bros', sans-serif;
   text-align: center;
   color: var(--red);
   margin: 0;
@@ -60,10 +67,15 @@ body {
   margin: 16px 0;
 }
 
+.explainBtn {
+  font-family: "Super Mario Bros", sans-serif;
+}
+
 .explanationTxt {
   background-color: white;
   border-radius: 8px;
   padding:0 16px;
+  font-family: "Super Mario Bros", sans-serif;
 }
 
 .btn {
@@ -197,19 +209,27 @@ body {
   .scoreDi🇻  > .score {
     margin: 0;
     padding: 0 48px;
+    font-family: 8px;
     position: fixed;
     width: 50%;
   }
 
   #currentScore {
     margin: 0;
+    font-size: 12px;
     background-color:white;
     color: black;
     width:  20%;
   }
 
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+
   #bestScore {
     width: 20%;
+    font-size: 12px;
     text-align: center;
     margin: 0;
     background-color: white;
@@ -222,7 +242,7 @@ body {
 }
 
 /* media query for tablet */
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 1180px) {
 
   .cards {
     width: 100%;
@@ -259,7 +279,7 @@ body {
 
   .scoreDiv > .score {
     margin: 0;
-    padding: 0 8px;
+    padding: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -271,17 +291,10 @@ body {
     margin: 0;
   }
 
-  #bestScore {
-    width: 8%;
-    text-align: center;
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-  }
-
   #currentScore {
-    width: 8%;
+    width: 5%;
     display: flex;
+    font-size: 12px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -289,5 +302,16 @@ body {
     color: black;
     border-radius: 8px;
   }
+
+  #bestScore {
+    width: 5%;
+    font-size: 12px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+  }
+
+
 
 }
