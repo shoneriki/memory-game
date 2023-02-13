@@ -99,7 +99,7 @@ const Cards = () => {
           />
           {
             showExplanation && (
-            <div>
+            <div className="explanationTxt">
               <p>
                 Here is how the game works: click each character card once, if you click on the character again, you lose the game. The goal is to click on all the characters without clicking on the same character twice. There are 18 cards in all
               </p>

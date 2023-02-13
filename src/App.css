@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color:#ff0000;
+  font-family:'Lato', sans-serif;
 }
 
 #app {
   width: 100%;
+  background-image: url("./assets/Mario-Characters/MarioLogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 #appTitle {
@@ -35,9 +43,18 @@ body {
   align-items: center;
   font-size: 1.2rem;
   width: 40%;
-  color: #ffff00;
+  color: blue;
+  font-weight: 700;
   margin: 16px 0;
 }
+
+.explanationTxt {
+  background-color: white;
+  border-radius: 8px;
+  padding:0 16px;
+}
+
+
 
 .btn {
   background-color: #ffff00;
@@ -51,6 +68,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px 0;
 }
 
 .scoreDiv {
@@ -193,6 +211,7 @@ body {
 
   .card {
     margin: 1%;
+    cursor: pointer;
   }
 
   .scoreDiv {
@@ -238,8 +257,5 @@ body {
     align-items: center;
     text-align: center;
   }
-
-
-
 
 }
