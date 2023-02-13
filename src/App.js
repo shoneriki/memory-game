@@ -4,7 +4,9 @@ import Cards from './components/Cards';
 
 function App() {
   return (
-    <div>
+    <div
+      id="app"
+    >
       <h1 id="appTitle">Memory Card Game</h1>
       <Cards />
     </div>

@@ -53,6 +53,12 @@ const Cards = () => {
 
   const [cardInfo, setCardsInfo] = useState(cardsInfo)
 
+  const [showExplanation, setShowExplanation] = useState(false)
+
+  const handleExplanation = () => {
+    setShowExplanation(!showExplanation)
+  }
+
 
 
   const handleClick = (e, card) => {
@@ -82,23 +88,56 @@ const Cards = () => {
 
 
   return (
-    <div className="cardsLayout">
-      <div className="score">
-        <h1>Score: {score}</h1>
-        <h1>Best Score: {bestScore}</h1>
+    <div className="cards">
+      <div className="explanationLayout">
+        <div className="explanation">
+          <input
+            type="button"
+            className="btn explainBtn"
+            value={showExplanation ? "Close" : "Explanation?"}
+            onClick={handleExplanation}
+          />
+          {
+            showExplanation && (
+            <div>
+              <p>
+                Here is how the game works: click each character card once, if you click on the character again, you lose the game. The goal is to click on all the characters without clicking on the same character twice. There are 18 cards in all
+              </p>
+            </div>
+            )
+          }
+        </div>
       </div>
-      {cardsInfo.map((card, index) => {
-        return (
-          <div
-            className="card"
-            key={index}
-            onClick={(e) => handleClick(e, card)}
+      <div className="scoreDiv">
+        <div className="scoreDivLayout">
+          <h3
+            className="score"
+            id ="currentScore"
           >
-            <h1>{card.displayName}</h1>
-            <img src={card.src} alt={card.name} />
-          </div>
-        );
-      })}
+            Score: {score}
+          </h3>
+          <h3
+            className="score"
+            id = "bestScore"
+          >
+            Best Score: {bestScore}
+          </h3>
+        </div>
+      </div>
+      <div className="cardsLayout">
+        {cardsInfo.map((card, index) => {
+          return (
+            <div
+              className="card"
+              key={index}
+              onClick={(e) => handleClick(e, card)}
+            >
+              <h1>{card.displayName}</h1>
+              <img src={card.src} alt={card.name} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

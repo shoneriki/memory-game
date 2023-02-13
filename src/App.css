@@ -2,18 +2,85 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color:#ff0000;
+}
+
+#app {
+  width: 100%;
+}
+
 #appTitle {
   font-size: 2.8rem;
   text-align: center;
   color: #333;
   margin: 0;
   padding: 0;
-
 }
+
+.explanationLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  width: 100%;
+}
+
+.explanation {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 40%;
+  color: #333;
+  margin: 0;
+}
+
+.btn {
+  background-color: #ffff00;
+  border: none;
+  color: #0000ff;
+  font-size: 24px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.scoreDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.scoreDiv > .scoreDivLayout {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding:0 48px;
+}
+
+.scoreDiv > .score {
+  margin: 0;
+  padding: 0 48px;
+  width: 100%;
+  position: fixed;
+}
+
 
 .cardsLayout {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 15%;
 }
 
 .card {
@@ -44,6 +111,30 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .explanation {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+    padding: 16px 80px;
+    width: 100%;
+  }
+
+  .scoreDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.scoreDiv > .score {
+  margin: 0;
+  padding: 0 48px;
+  position: fixed;
+  width: 50%;
+}
+
   .card {
     margin: 16px;
   }
@@ -55,10 +146,39 @@
   .cardsLayout {
     display: flex;
     flex-direction: row;
+    margin: 0 48px;
     flex-wrap: wrap;
     align-items: center;
   }
   .card {
-    margin: 16px;
+    margin: 2%;
   }
+
+  .scoreDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+  }
+
+  .scoreDiv > .scoreDivLayout {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .scoreDiv > .score {
+    margin: 0;
+    padding: 0 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+
 }
