@@ -64,7 +64,10 @@ const Cards = () => {
         return (
           <div className="card">
             <h1>{card.displayName}</h1>
-            <img src={card.src} alt={card.name} />
+            <img
+              src={card.src}
+              alt={card.name}
+            />
           </div>
         );
       })}

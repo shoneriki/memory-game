@@ -11,7 +11,7 @@ import luigiSrc from "../assets/Mario-Characters/Luigi.png";
 import marioSrc from "../assets/Mario-Characters/Mario.png";
 import peachSrc from "../assets/Mario-Characters/Peach.png";
 import profEgadSrc from "../assets/Mario-Characters/ProfEgad.png";
-import toadSrc from "../assets/Mario-Characters/Toad.png";
+import toadSrc from "../assets/Mario-Characters/ToadTransparent.png";
 import toadsworthSrc from "../assets/Mario-Characters/Toadsworth.png";
 import waluigiSrc from "../assets/Mario-Characters/Waluigi.png";
 import warioSrc from "../assets/Mario-Characters/Wario.png";
