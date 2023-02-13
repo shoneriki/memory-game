@@ -35,7 +35,7 @@ const Cards = () => {
       // a click event listener
 
   // 3. when a card is clicked,
-      // the id of the card should be stored in an array
+      // the id of the card should be stored in an array, so push the name into the array
       // cards should be shuffled on screen
   // 4. there should be a state for adding score for each card in the array
     // (adding 1 to the score for each click)
@@ -44,30 +44,58 @@ const Cards = () => {
   // 6. if the score is greater than the best score,
       //then the best score should be updated to the score
 
-
-
-
-
-  const [cardIds, setCardIds] = useState([])
+  const [cardNames, setCardNames] = useState([])
 
   const [duplicate, setDuplicate] = useState(false)
 
   const [score, setScore] = useState(0)
   const [bestScore, setBestScore] = useState(0)
 
+  const [cardInfo, setCardsInfo] = useState(cardsInfo)
+
+
+
+  const handleClick = (e, card) => {
+    const cardName = card.name
+    if (cardNames.includes(cardName)) {
+      setDuplicate(true)
+      setScore(0)
+      setCardNames([])
+    } else {
+      setDuplicate(false)
+      setCardNames([...cardNames, cardName])
+      setScore(score + 1)
+      if (score + 1 > bestScore) {
+        setBestScore(score + 1);
+      }
+    }
+    shuffleCards(cardsInfo)
+  }
+
+  const shuffleCards = (cards) => {
+  for (let i = cards.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [cards[i], cards[j]] = [cards[j], cards[i]];
+  }
+  setCardsInfo(cards)
+}
 
 
   return (
-
     <div className="cardsLayout">
+      <div className="score">
+        <h1>Score: {score}</h1>
+        <h1>Best Score: {bestScore}</h1>
+      </div>
       {cardsInfo.map((card, index) => {
         return (
-          <div className="card">
+          <div
+            className="card"
+            key={index}
+            onClick={(e) => handleClick(e, card)}
+          >
             <h1>{card.displayName}</h1>
-            <img
-              src={card.src}
-              alt={card.name}
-            />
+            <img src={card.src} alt={card.name} />
           </div>
         );
       })}
