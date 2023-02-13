@@ -12,7 +12,7 @@ body {
 
 @font-face {
   font-family: "Super Mario Bros";
-  src: url("./assets/Mario-Characters/SuperMario256.ttf") format("truetype");
+  src: url("./assets/fonts/SuperMario256.ttf") format("truetype");
 }
 
 :root {
@@ -292,9 +292,9 @@ body {
   }
 
   #currentScore {
-    width: 5%;
     display: flex;
-    font-size: 12px;
+    width: 8%;
+    font-size: 16px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -304,14 +304,12 @@ body {
   }
 
   #bestScore {
-    width: 5%;
-    font-size: 12px;
+    width: 8%;
+    font-size: 16px;
     text-align: center;
     background-color: white;
     color: black;
     border-radius: 8px;
   }
-
-
 
 }
