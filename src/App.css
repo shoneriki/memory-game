@@ -43,6 +43,11 @@ body {
   width: 100%;
 }
 
+.card {
+  cursor: pointer;
+  z-index: 100;
+}
+
 .explanation {
   display:flex;
   flex-direction: column;
@@ -88,8 +93,9 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding:0 48px;
+  padding: 0 48px;
   position: fixed;
+  z-index: 1;
 }
 
 .scoreDiv > .score {
@@ -152,6 +158,10 @@ body {
 
 /* media query for mobile */
 @media (max-width: 600px) {
+
+  .card {
+    cursor: pointer;
+  }
 
   .cardsLayout {
     display: flex;
