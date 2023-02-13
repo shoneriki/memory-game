@@ -1,4 +1,22 @@
-import "../assets/Mario-Characters/Baby-Luigi.png";
+import babyLuigiSrc from "../assets/Mario-Characters/Baby-Luigi.png";
+import babyMarioSrc from "../assets/Mario-Characters/Baby-Mario.png";
+import babyYoshiSrc from "../assets/Mario-Characters/Baby-Yoshi.png";
+import bowserSrc from "../assets/Mario-Characters/Bowser.png";
+import bowserJrSrc from "../assets/Mario-Characters/BowserJr.png";
+import daisySrc from "../assets/Mario-Characters/Daisy.png";
+import kamekSrc from "../assets/Mario-Characters/Kamek.png";
+import larryKoopaSrc from "../assets/Mario-Characters/Larry-Koopa.png";
+import ludwigVonKoopaSrc from "../assets/Mario-Characters/Ludwig-Von-Koopa.png";
+import luigiSrc from "../assets/Mario-Characters/Luigi.png";
+import marioSrc from "../assets/Mario-Characters/Mario.png";
+import peachSrc from "../assets/Mario-Characters/Peach.png";
+import profEgadSrc from "../assets/Mario-Characters/ProfEgad.png";
+import toadSrc from "../assets/Mario-Characters/Toad.png";
+import toadsworthSrc from "../assets/Mario-Characters/Toadsworth.png";
+import waluigiSrc from "../assets/Mario-Characters/Waluigi.png";
+import warioSrc from "../assets/Mario-Characters/Wario.png";
+import yoshiSrc from "../assets/Mario-Characters/Yoshi.png";
+
 
 const cardsInfo = [
   {
@@ -6,109 +24,109 @@ const cardsInfo = [
     name: "baby luigi",
     // src: "../assets/Mario-Characters/Baby-Luigi.png",
     displayName: "Baby Luigi",
-    src: "../assets/Mario-Characters/Baby-Luigi.png",
+    src: babyLuigiSrc,
   },
   {
     id: 2,
     name: "baby mario",
     displayName: "Baby Mario",
-    src: "../assets/Mario-Characters/Baby-Mario.png",
+    src: babyMarioSrc,
   },
   {
     id: 3,
     name: "baby yoshi",
     displayName: "Baby Yoshi",
-    src: "../assets/Mario-Characters/Baby-Yoshi.png",
+    src: babyYoshiSrc,
   },
   {
     id: 4,
     name: "bowser",
     displayName: "Bowser",
-    src: "../assets/Mario-Characters/Bowser.png",
+    src: bowserSrc,
   },
   {
     id: 5,
     name: "bowser jr.",
     displayName: "Bowser Jr.",
-    src: "../assets/Mario-Characters/BowserJr.png",
+    src: bowserJrSrc,
   },
   {
     id: 6,
     name: "daisy",
     displayName: "Daisy",
-    src: "../assets/Mario-Characters/Daisy.png",
+    src: daisySrc,
   },
   {
     id: 7,
     name: "kamek",
     displayName: "Kamek",
-    src: "../assets/Mario-Characters/Kamek.png",
+    src: kamekSrc,
   },
   {
     id: 8,
     name: "larry koopa",
     displayName: "Larry Koopa",
-    src: "../assets/Mario-Characters/LarryKoopa.png",
+    src: larryKoopaSrc,
   },
   {
     id: 9,
     name: "ludwig von koopa",
     displayName: "Ludwig Von Koopa",
-    src: "../assets/Mario-Characters/LudwigVonKoopa.png",
+    src: ludwigVonKoopaSrc,
   },
   {
     id: 10,
     name: "luigi",
     displayName: "Luigi",
-    src: "../assets/Mario-Characters/Luigi.png",
+    src: luigiSrc,
   },
   {
     id: 11,
     name: "mario",
     displayName: "Mario",
-    src: "../assets/Mario-Characters/Mario.png",
+    src: marioSrc,
   },
   {
     id: 12,
     name: "peach",
     displayName: "Peach",
-    src: "../assets/Mario-Characters/Peach.png",
+    src: peachSrc,
   },
   {
     id: 13,
     name: "professor egad",
     displayName: "Professor Egad",
-    src: "../assets/Mario-Characters/ProfessorEgad.png",
+    src: profEgadSrc,
   },
   {
     id: 14,
     name: "toad",
     displayName: "Toad",
-    src: "../assets/Mario-Characters/Toad.png",
+    src: toadSrc,
   },
   {
     id: 15,
     name: "toadsworth",
     displayName: "Toadsworth",
-    src: "../assets/Mario-Characters/Toadsworth.png",
+    src: toadsworthSrc,
   },
   {
     id: 16,
     name: "waluigi",
     displayName: "Waluigi",
-    src: "../assets/Mario-Characters/Waluigi.png",
+    src: waluigiSrc,
   },
   {
     id: 17,
     name: "wario",
     displayName: "Wario",
-    src: "../assets/Mario-Characters/Wario.png",
+    src: warioSrc,
   },
   {
     id: 18,
     name: "yoshi",
     displayName: "Yoshi",
-    src: "../assets/Mario-Characters/Yoshi.png",
+    src: yoshiSrc,
   },
 ];
 
