@@ -1,4 +1,4 @@
-# Memory Mario Game
+# Memory Game
 
 This is a memory card game built in React where the objective is to click on a different card for as long as possible. The cards are based on characters from the Super Mario Franchise.
 
