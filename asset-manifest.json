@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.e8654d4a.css",
+    "main.js": "/memory-game/static/js/main.7f51426a.js",
+    "static/media/Mario-Banner-2.png": "/memory-game/static/media/Mario-Banner-2.da4011579a4131b93e77.png",
+    "static/media/ToadTransparent.png": "/memory-game/static/media/ToadTransparent.e415c2266be227a08bef.png",
+    "static/media/ProfEgad.png": "/memory-game/static/media/ProfEgad.3498ba5d10e173876fdf.png",
+    "static/media/Wario.png": "/memory-game/static/media/Wario.07cd6cc67ed036f47bae.png",
+    "static/media/Bowser.png": "/memory-game/static/media/Bowser.5584ed0d06a978286c5d.png",
+    "static/media/Ludwig-Von-Koopa.png": "/memory-game/static/media/Ludwig-Von-Koopa.cb435a366ce0b844a69d.png",
+    "static/media/Baby-Yoshi.png": "/memory-game/static/media/Baby-Yoshi.c3e91105e7d1529ac235.png",
+    "static/media/BowserJr.png": "/memory-game/static/media/BowserJr.a761bfb0f8b0ff0ff568.png",
+    "static/media/Kamek.png": "/memory-game/static/media/Kamek.3dde199dc868d3c37dc2.png",
+    "static/media/Mario.png": "/memory-game/static/media/Mario.6dc216d043f485b099d5.png",
+    "static/media/Baby-Mario.png": "/memory-game/static/media/Baby-Mario.fe963ef96569b61f7504.png",
+    "static/media/Baby-Luigi.png": "/memory-game/static/media/Baby-Luigi.680b019d12ca52c12d08.png",
+    "static/media/Toadsworth.png": "/memory-game/static/media/Toadsworth.6becb65d8b9aa8fdfb12.png",
+    "static/media/Luigi.png": "/memory-game/static/media/Luigi.4c6169172d6a733e8529.png",
+    "static/media/Peach.png": "/memory-game/static/media/Peach.98a5ae2dcd0bd145fac0.png",
+    "static/media/Larry-Koopa.png": "/memory-game/static/media/Larry-Koopa.c7fdd621598a0196182a.png",
+    "static/media/Yoshi.png": "/memory-game/static/media/Yoshi.302a34d8c0609d47741f.png",
+    "static/media/Waluigi.png": "/memory-game/static/media/Waluigi.9b161558f43cbdad98b4.png",
+    "static/media/Daisy.png": "/memory-game/static/media/Daisy.b918da8e80a960caa898.png",
+    "static/media/SuperMario256.ttf": "/memory-game/static/media/SuperMario256.727519250ea444b6c5ce.ttf",
+    "index.html": "/memory-game/index.html",
+    "main.e8654d4a.css.map": "/memory-game/static/css/main.e8654d4a.css.map",
+    "main.7f51426a.js.map": "/memory-game/static/js/main.7f51426a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8654d4a.css",
+    "static/js/main.7f51426a.js"
+  ]
+}
