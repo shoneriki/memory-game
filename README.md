@@ -2,6 +2,9 @@
 
 This is a memory card game built in React where the objective is to click on a different card for as long as possible. The cards are based on characters from the Super Mario Franchise.
 
+<h3><a href="https://shoneriki.github.io/memory-game" target="_blank" font-size>Live Demo</a>👈</h3>
+
+
 ## Getting started
 
 ```
