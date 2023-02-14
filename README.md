@@ -4,12 +4,12 @@ This is a memory card game where the objective is to click on a different card f
 
 ## Getting started
 
-`
+```
 git clone <https://github.com/shoneriki/memory-game.git>
 cd cv-application
 npm install
 npm start
-`
+```
 
 ## How to Play
 
