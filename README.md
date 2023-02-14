@@ -1,6 +1,6 @@
 # Memory Mario Game
 
-This is a memory card game where the objective is to click on a different card for as long as possible. The cards are based on characters from the Super Mario Franchise.
+This is a memory card game built in React where the objective is to click on a different card for as long as possible. The cards are based on characters from the Super Mario Franchise.
 
 ## Getting started
 
@@ -19,7 +19,3 @@ npm start
 4. The screen will randomly "shuffle" the cards after the click.
 5. For every different card you click, you will earn 1 point each.
 6. If you select a card you already clicked on, the score will reset back to 0.
-
-## Built-with
-
-  React
