@@ -94,6 +94,7 @@ body {
 
 .card {
   cursor: pointer;
+  font-size: 12px;
   z-index: 100;
 }
 
@@ -420,7 +421,7 @@ body {
 /* End of media query for most tablets ------------*/
 
 /* media query for large tablets ------------------*/
-@media (min-width: 900px) and (max-width: 1180px) {
+@media (min-width: 900px) and (max-width: 1500px) {
 
   #currentScore{
     width: 10%;
