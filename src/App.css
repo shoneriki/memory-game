@@ -19,7 +19,9 @@ body {
   --red: #E52521;
   --yellow: #FBD000;
   --blue: #049CD8;
-  --green: #43B047
+  --green: #43B047;
+  --score-txt-size: 16px;
+  --font-size-small: 12px;
 }
 
 #app {
@@ -45,16 +47,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.cards {
-  width: 100%;
-}
-
-.card {
-  cursor: pointer;
-  z-index: 100;
-}
-
 .explanation {
   display:flex;
   flex-direction: column;
@@ -64,18 +56,8 @@ body {
   width: 40%;
   color: var(--red);
   font-weight: 700;
+
   margin: 16px 0;
-}
-
-.explainBtn {
-  font-family: "Super Mario Bros", sans-serif;
-}
-
-.explanationTxt {
-  background-color: white;
-  border-radius: 8px;
-  padding:0 16px;
-  font-family: "Super Mario Bros", sans-serif;
 }
 
 .btn {
@@ -92,6 +74,30 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   margin: 8px 0;
 }
+
+.explainBtn {
+  padding: 8px 24px;
+  font-size: 16px;
+  font-family: "Super Mario Bros", sans-serif;
+}
+
+.explanationTxt {
+  background-color: white;
+  border-radius: 8px;
+  padding:0 16px;
+  font-family: "Super Mario Bros", sans-serif;
+}
+
+.cards {
+  width: 100%;
+}
+
+.card {
+  cursor: pointer;
+  z-index: 100;
+}
+
+
 
 .scoreDiv {
   display: flex;
@@ -119,6 +125,7 @@ body {
 
 #currentScore {
   width: 7%;
+  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +138,7 @@ body {
 
 #bestScore {
   width: 7%;
+  padding: 8px;
   text-align: center;
   color: var(--yellow);
   background-color: white;
@@ -165,35 +173,110 @@ body {
   height: auto;
   object-fit: contain;
 }
+/* media query for smaller mobiles ----------------*/
+@media (min-width: 0) and (max-width: 350px) {
 
+  #appTitle {
+    font-size: 16px;
+  }
 
+  .explanationLayout {
+    margin: 0;
+    padding: 0;
+    width: 100;
+  }
 
-/* media query for mobile */
-@media (max-width: 600px) {
+  .explanation {
+    width: 88%;
+  }
 
-  .card {
-    cursor: pointer;
+  .explanationTxt {
+    margin: 0;
+    font-size: 8px;
+  }
+  .scoreDiv > .scoreDivLayout {
+    padding: 0;
+    margin: 0;
+  }
+
+  .scoreDivLayout > .score {
+    width: 100%;
+  }
+
+  #currentScore {
+    width: 20%;
+    margin: 0;
+    padding: 2px;
+    font-size: 8px;
+  }
+
+  #bestScore {
+    width: 20%;
+    margin: 0;
+    padding: 2px;
+    font-size: 8px;
   }
 
   .cardsLayout {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2% 15%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    height: 240px;
+    width: 140px;
+    margin: 5%;
+    border-radius: 8px;
+  }
+  .card > h1 {
+    font-size: 16px;
+  }
+}
+
+/*  end media query for smaller mobiles*/
+
+/* media query for most mobiles -------------------*/
+@media (min-width: 350px) and (max-width: 717px) {
+  #appTitle{
+    font-size: 32px;
   }
 
   .explanation {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-    color: var(--yellow);
+    color: var(--red);
     margin: 0;
-    padding: 16px 80px;
+    padding: 16px;
     width: 100%;
   }
 
+  .explanationTxt {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 36px;
+    font-family: "Super Mario Bros", sans-serif;
+  }
+
+  .explainBtn {
+    padding: 8px 24px;
+    font-size: 20px;
+  }
+
+  .explanationTxt > p {
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size-small);
+  }
+
+
   .scoreDiv {
     width: 100%;
+    margin: 16px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,17 +292,9 @@ body {
   .scoreDi🇻  > .score {
     margin: 0;
     padding: 0 48px;
-    font-family: 8px;
+    font-family: var(--);
     position: fixed;
     width: 50%;
-  }
-
-  #currentScore {
-    margin: 0;
-    font-size: 12px;
-    background-color:white;
-    color: black;
-    width:  20%;
   }
 
   h3 {
@@ -227,38 +302,48 @@ body {
     margin: 0;
   }
 
+  #currentScore {
+    margin: 0;
+    font-size: var(--font-size-small);
+    background-color:white;
+    color: black;
+    width:  20%;
+  }
+
   #bestScore {
     width: 20%;
-    font-size: 12px;
+    font-size: var(--font-size-small);
     text-align: center;
     margin: 0;
     background-color: white;
     color: black;
   }
 
-  .card {
-    margin: 16px;
-  }
-}
-
-/* media query for tablet */
-@media (min-width: 600px) and (max-width: 1180px) {
-
-  .cards {
-    width: 100%;
-  }
   .cardsLayout {
     display: flex;
-    flex-direction: row;
-    margin: 4% 8%;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    margin: 0 15% 4% 15%;
+  }
+
+  .card>img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .card {
-    margin: 1%;
     cursor: pointer;
+    font-size: var(--font-size-small);
+    margin: 16px;
   }
+
+
+}
+/* end of media query for most mobiles ------------*/
+
+/* media query for most tablets -------------------*/
+@media (min-width: 717px) and (max-width: 900px) {
 
   .scoreDiv {
     display: flex;
@@ -274,7 +359,7 @@ body {
   .scoreDiv > .scoreDivLayout {
     display: flex;
     margin: 0;
-    padding: 0 3px;
+    padding: 0;
   }
 
   .scoreDiv > .score {
@@ -294,7 +379,7 @@ body {
   #currentScore {
     display: flex;
     width: 8%;
-    font-size: 16px;
+    font-size: 2vw;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -305,11 +390,53 @@ body {
 
   #bestScore {
     width: 8%;
-    font-size: 16px;
+    font-size: 2vw;
     text-align: center;
     background-color: white;
     color: black;
     border-radius: 8px;
   }
 
+  .cards {
+    width: 100%;
+  }
+
+  .cardsLayout {
+    display: flex;
+    flex-direction: row;
+    margin: 4% 8%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .card {
+    margin: 1%;
+    cursor: pointer;
+    font-size: var(--font-size-small);
+  }
+
 }
+
+/* End of media query for most tablets ------------*/
+
+/* media query for large tablets ------------------*/
+@media (min-width: 900px) and (max-width: 1180px) {
+
+  #currentScore{
+    width: 10%;
+    font-size: 16px;
+    padding: 12px;
+  }
+  #bestScore{
+    width: 10%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .card {
+    margin: 2.5%;
+    font-size: var(--font-size-small);
+  }
+}
+
+/* End of media query for large tablets -----------*/
